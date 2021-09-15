@@ -92,6 +92,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias c='clear'
+alias aliases='cat ~/.bashrc | grep '^alias''
 
 # apt
 alias update='sudo apt-get update'
