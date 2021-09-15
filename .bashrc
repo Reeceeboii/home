@@ -99,7 +99,7 @@ alias updateandupgrade='sudo apt-get update && sudo apt-get upgrade'
 
 alias storage='df -h | grep sda'
 alias server='ssh reece@192.168.1.6'
-
+alias router="ssh Reeceeboii@192.168.1.1 -p 5684"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
