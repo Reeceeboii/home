@@ -1,12 +1,7 @@
 #!/bin/bash
 
-# try SSH authing for private repo access, warn if this does not work
-if ! ssh git@github.com; then
-  echo "SSH not in place, auth will not work for private repos"
-fi
-
-git init
-git remote add origin git@github.com:Reeceeboii/home.git
-git pull origin master
+git init > /dev/null 2>&1
+git remote add origin git@github.com:Reeceeboii/home.git > /dev/null 2>&1
+git pull origin master > /dev/null 2>&1
 # clean up misc files (inc. this script itself)
-rm ./LICENSE README.md ./.homesetup.sh
+rm ./LICENSE README.md ./.homesetup.sh > /dev/null 2>&1
