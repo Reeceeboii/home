@@ -87,17 +87,22 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
+# misc
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-
 alias c='clear'
+
+# apt
 alias update='sudo apt-get update'
 alias upgrade='sudo apt-get upgrade'
 alias updateandupgrade='sudo apt-get update && sudo apt-get upgrade'
+alias upgradable='apt list --upgradable'
 
+# system
 alias storage='df -h | grep sda'
+
+# SSH
 alias server='ssh reece@192.168.1.6'
 alias router="ssh Reeceeboii@192.168.1.1 -p 5684"
 
