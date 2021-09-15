@@ -99,6 +99,10 @@ alias update='sudo apt-get update'
 alias upgrade='sudo apt-get upgrade'
 alias updateandupgrade='sudo apt-get update && sudo apt-get upgrade'
 alias upgradable='apt list --upgradable'
+alias search='apt search --names-only'
+alias install='sudo apt-get install'
+alias remove='sudo apt-get remove'
+alias autoremove='sudo apt autoremove'
 
 # system
 alias storage='df -h | grep sda'
