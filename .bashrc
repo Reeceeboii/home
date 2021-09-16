@@ -93,6 +93,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias c='clear'
 alias aliases='cat ~/.bashrc | grep '^alias''
+alias mysudo='sudo -E env "PATH=$PATH"'
 
 # apt
 alias update='sudo apt-get update'
@@ -106,6 +107,7 @@ alias autoremove='sudo apt autoremove'
 
 # system
 alias storage='df -h | grep sda'
+alias watchaio='watch -n 1 sudo -E env "PATH=$PATH" liquidctl status'
 
 # SSH
 alias server='ssh reece@192.168.1.6'
@@ -134,3 +136,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+PATH=${PATH}:/home/reece/.local/bin
+export PATH
