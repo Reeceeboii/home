@@ -139,5 +139,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-PATH=${PATH}:/home/reece/.local/bin
-export PATH
+# add /home/reece/.local/bin to path if it exists
+if [ -d /home/reece/.local/bin ]
+then
+    PATH=${PATH}:/home/reece/.local/bin
+    export PATH
+fi
