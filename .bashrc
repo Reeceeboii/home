@@ -92,6 +92,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias c='clear'
+alias q='exit'
 alias aliases='cat ~/.bashrc | grep '^alias''
 alias mysudo='sudo -E env "PATH=$PATH"'
 
