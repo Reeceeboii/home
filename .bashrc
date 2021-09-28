@@ -145,3 +145,11 @@ then
     PATH=${PATH}:/home/reece/.local/bin
     export PATH
 fi
+
+# add /home/reece/go/bin to path if it exists
+if [ -d /home/reece/go/bin ]
+then
+    PATH=${PATH}:/home/reece/go/bin
+    export PATH
+fi
+
