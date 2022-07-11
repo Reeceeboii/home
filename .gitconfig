@@ -1,11 +1,8 @@
 [user]
 	email = reecemercer981@gmail.com
 	name = Reece Mercer
-	signingkey = 864CBFEF
 [core]
 	autocrlf = input
-[commit]
-	gpgsign = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
